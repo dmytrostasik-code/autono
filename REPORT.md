@@ -186,7 +186,7 @@ While driving, the node logs progress, cross-track error and speed every 2 s.
 
 ## 9. SITL results
 
-These are runs of the final code with `control.launch.py gz_gui:=false` on my laptop (Ryzen 5 2500U), where Gazebo ran at about 0.7× real time. Every run ended with `Path complete`. Values from separate runs are separated by `/`.
+These are runs of the final code with `control.launch.py gz_gui:=false` on my laptop, where Gazebo ran at about 0.7× real time. Every run ended with `Path complete`. Values from separate runs are separated by `/`.
 
 | Path | Score | Completion | RMS CTE | Max CTE |
 |---|---|---|---|---|
@@ -201,7 +201,7 @@ On `2-complicated` the rover stalled at the dirt-path edge in two of the three r
 
 Scores change by a few points between runs. On `1-drive-with-turns` the same tracking code scored between 79 and 90 on this laptop. The worst run had two "target not received" stops from ArduRover caused by CPU load. In the other runs the largest error is at the first bend: after the wait for the EKF origin, ArduRover overshoots to about 2 m/s before its speed loop settles.
 
-The video `ardurover_path1_video.mp4` is a screen recording of a `1-drive-with-turns` run (score 89.0).
+Video: [screen recording of a `1-drive-with-turns` run](https://drive.google.com/file/d/1bbLpXDf4Buw4kgGqj1DlCfivCNkJRGV4/view?usp=sharing) (score 89.0), on Google Drive.
 
 ## 10. Scorer note for `2-complicated.path`
 
