@@ -1,0 +1,11 @@
+Language: Cpp
+BasedOnStyle: Google
+AccessModifierOffset: -2
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ContinuationIndentWidth: 4
+ColumnLimit: 120
+FixNamespaceComments: false
+AlignAfterOpenBracket: BlockIndent
+BinPackParameters: false

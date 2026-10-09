@@ -1,0 +1,74 @@
+{
+  "workspaceFolder": "/home/developer/ardurover_navigation",
+  "remoteUser": "developer",
+
+  "remoteEnv": {
+    "DISPLAY": "${localEnv:DISPLAY}",
+    "XAUTHORITY": "/home/developer/.Xauthority"
+  },
+
+  "extensions": [
+    "anysphere.cpptools",
+    "ms-vscode.cpptools",
+    "ms-vscode.cmake-tools",
+    "ms-iot.vscode-ros",
+    "ms-python.python",
+    "xaver.clang-format",
+    "llvm-vs-code-extensions.vscode-clangd",
+    "ms-python.black-formatter",
+    "ms-python.pylint",
+    "redhat.vscode-xml",
+    "anthropic.claude-code",
+    "anysphere.cursor-agent-worker"
+  ],
+
+  "settings": {
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "ros.distro": "jazzy",
+    "clang-format.executable": "/usr/bin/clang-format",
+    "clang-format.style": "file",
+
+    "[c]": {
+      "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "[cpp]": {
+      "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "[xml]": {
+      "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+
+    "xml.format.enabled": true,
+    "xml.format.splitAttributes": false,
+    "xml.format.joinContentLines": false,
+    "xml.format.spaceBeforeEmptyCloseTag": true,
+
+    "files.associations": {
+      "*.sdf.in": "xml"
+    },
+
+    "clangd.path": "/usr/bin/clangd",
+    "clangd.arguments": [
+      "--compile-commands-dir=${workspaceFolder}/build",
+      "--header-insertion=never",
+      "--background-index"
+    ],
+    "clangd.checkUpdates": false,
+    "clangd.onConfigChanged": "restart",
+    "clangd.detectExtensionConflicts": false,
+
+    "[python]": {
+      "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+
+    "pylint.cwd": "${workspaceFolder}",
+    "pylint.args": [
+      "--max-line-length=120",
+      "--disable=C0114,C0115,C0116"
+    ],
+
+    "editor.rulers": [
+      120
+    ]
+  }
+}

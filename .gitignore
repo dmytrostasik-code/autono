@@ -1,0 +1,8 @@
+build/
+install/
+log/
+.sitl/
+*.pyc
+__pycache__/
+paths/recorded.path
+.vscode/c_cpp_properties.json

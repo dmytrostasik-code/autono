@@ -1,0 +1,16 @@
+{
+    "recommendations": [
+        "anysphere.cpptools",
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools",
+        "ms-iot.vscode-ros",
+        "ms-python.python",
+        "xaver.clang-format",
+        "llvm-vs-code-extensions.vscode-clangd",
+        "redhat.vscode-xml",
+        "ms-python.black-formatter",
+        "ms-python.pylint",
+        "anthropic.claude-code",
+        "anysphere.cursor-agent-worker"
+    ]
+}
