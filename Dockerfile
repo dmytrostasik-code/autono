@@ -74,7 +74,8 @@ RUN python3 -m pip install --break-system-packages --no-cache-dir \
     pexpect \
     MAVProxy \
     pymavlink \
-    intelhex
+    intelhex \
+    "numpy<2"
 
 RUN wget -qO /tmp/install_geographiclib_datasets.sh \
         https://raw.githubusercontent.com/mavlink/mavros/ros2/mavros/scripts/install_geographiclib_datasets.sh \
